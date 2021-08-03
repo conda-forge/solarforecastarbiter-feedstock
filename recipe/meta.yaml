@@ -23,7 +23,7 @@ requirements:
     - python
   run:
     - aiohttp
-    - bokeh
+    - bokeh >=1.4.0, <2
     - click
     - jsonschema
     - loky
@@ -31,9 +31,9 @@ requirements:
     - netcdf4
     - numpy
     - pandas >=0.25.1
-    - plotly
+    - plotly >=4.5.0, <5
     - psutil
-    - pvlib-python >=0.7.0
+    - pvlib-python ==0.8.0
     - python >=3.7
     - requests
     - scipy
