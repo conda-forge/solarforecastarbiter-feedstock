@@ -1,5 +1,5 @@
 {% set name = "solarforecastarbiter" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarforecastarbiter-{{ version }}.tar.gz
-  sha256: 28941883afbed65b033eb86ed62db003064775ed8e6231a7849eeb7573637a38
+  sha256: 3b810244da13490b5fcabd1788539ba59c48f7abc8e898284e5bea659092d97b
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python
   run:
     - aiohttp
-    - bokeh
+    - bokeh >=1.4.0, <2
     - click
     - jsonschema
     - loky
@@ -31,9 +31,9 @@ requirements:
     - netcdf4
     - numpy
     - pandas >=0.25.1
-    - plotly
+    - plotly >=4.5.0, <5
     - psutil
-    - pvlib-python >=0.7.0
+    - pvlib-python ==0.8.0
     - python >=3.7
     - requests
     - scipy
@@ -62,5 +62,4 @@ about:
 extra:
   recipe-maintainers:
     - wholmgren
-    - alorenzo175
     - lboeman
