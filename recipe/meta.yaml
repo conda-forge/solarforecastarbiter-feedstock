@@ -1,5 +1,5 @@
 {% set name = "solarforecastarbiter" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarforecastarbiter-{{ version }}.tar.gz
-  sha256: f07ad9f3d572ad3e48c4c2da7f41e7fb17b687813e003c0cc6c2488ee784e77e
+  sha256: 35a5d2fe8128f0415816d6fdabdeda3dec6f0a63c02507c50962bcf36f51b389
 
 build:
   number: 0
