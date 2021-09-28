@@ -26,6 +26,7 @@ requirements:
     - bokeh >=1.4.0, <2
     - click
     - jsonschema
+    - jinja2
     - loky
     - matplotlib-base
     - netcdf4
@@ -35,6 +36,7 @@ requirements:
     - psutil
     - pvlib-python ==0.8.0
     - python >=3.7
+    - pytz
     - requests <=2.25.1
     - scipy
     - sentry-sdk
