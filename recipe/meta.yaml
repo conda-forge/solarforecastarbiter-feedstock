@@ -1,5 +1,5 @@
 {% set name = "solarforecastarbiter" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarforecastarbiter-{{ version }}.tar.gz
-  sha256: 35a5d2fe8128f0415816d6fdabdeda3dec6f0a63c02507c50962bcf36f51b389
+  sha256: b711e3acdf13e47002033db33de84b9ed2c080674e146a81bd4d0a0ea52c36de
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - bokeh >=1.4.0, <2
     - click
     - jsonschema
+    - jinja2
     - loky
     - matplotlib-base
     - netcdf4
@@ -35,6 +36,7 @@ requirements:
     - psutil
     - pvlib-python ==0.8.0
     - python >=3.7
+    - pytz
     - requests <=2.25.1
     - scipy
     - sentry-sdk
