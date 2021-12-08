@@ -40,6 +40,7 @@ requirements:
     - requests <=2.25.1
     - scipy
     - sentry-sdk
+    - selenium <4
     - statsmodels
     - pytables
     - xarray
