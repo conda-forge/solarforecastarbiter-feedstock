@@ -1,5 +1,5 @@
 {% set name = "solarforecastarbiter" %}
-{% set version = "1.0.10" %}
+{% set version = "1.0.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarforecastarbiter-{{ version }}.tar.gz
-  sha256: 73a5bdaa47f714906b1bd452680d147f4698f43d7cb95c49b458d875c97d980d
+  sha256: 87359101ed2a44f2f772886e1cad4f727bfdb936b6f6f85acda5d6037ee58544
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - netcdf4
     - numpy
     - pandas >=0.25.1
-    - plotly >=4.5.0, <5
+    - plotly >=4.9.0, <5
     - psutil
     - pvlib-python ==0.8.0
     - python >=3.7
@@ -44,6 +44,7 @@ requirements:
     - statsmodels
     - pytables
     - xarray
+    - python-kaleido ==0.2.1
 
 test:
   imports:
