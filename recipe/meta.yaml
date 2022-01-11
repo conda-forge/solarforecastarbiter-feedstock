@@ -32,7 +32,7 @@ requirements:
     - netcdf4
     - numpy
     - pandas >=0.25.1
-    - plotly >=4.5.0, <5
+    - plotly >=4.9.0, <5
     - psutil
     - pvlib-python ==0.8.0
     - python >=3.7
@@ -44,6 +44,7 @@ requirements:
     - statsmodels
     - pytables
     - xarray
+    - kaleido ==0.2.1
 
 test:
   imports:
