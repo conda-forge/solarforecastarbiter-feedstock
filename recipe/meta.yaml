@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarforecastarbiter-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/solarforecastarbiter-{{ version }}.tar.gz
   sha256: 19828b9de5adc88966df9b529606aa0b1fffc3bae5b612a68f540adaba4d1a14
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - solararbiter=solarforecastarbiter.cli:cli
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
   run:
     - aiohttp
     - bokeh >=1.4.0, <2
@@ -35,7 +35,7 @@ requirements:
     - plotly >=4.9.0, <5
     - psutil
     - pvlib-python ==0.8.0
-    - python >=3.7
+    - python >={{ python_min }}
     - pytz
     - requests <=2.25.1
     - scipy
@@ -55,6 +55,7 @@ test:
     - solararbiter --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/solararbiter/solarforecastarbiter-core
